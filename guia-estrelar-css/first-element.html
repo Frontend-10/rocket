@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First element</title>
+    <style>
+        /* !important sobrepoẽ qualquer padrão css, não é considerado
+           uma boa prática, usar somente em último caso */
+        p {
+            color: greenyellow !important;
+        }
+        /* Alterar estilo do primeiro elemento filho que for 'p', 
+           somente a primeira letra */
+        p:first-of-type::first-letter {
+            color: red;
+        }
+        
+        p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box01">
+        <p>Elemento 01</p>
+        <p>Elemento 02</p>
+    </div>
+    <div class="box02">
+        <p>Elemento 01</p>
+        <p>Elemento 02</p>
+    </div>
+</body>
+</html>

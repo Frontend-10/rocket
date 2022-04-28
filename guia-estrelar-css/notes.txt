@@ -1,0 +1,21 @@
+A CASCATA
+
+Seu estilo é lido de cima para baixo
+
+É levado em consideração 3 fatores:
+- Origem do estilo;
+- Especifidade;
+- Importancia.
+
+Origem do estilo:
+inline > tag style > tag link
+
+Especifidade:
+0 - universal seletor, combinators e negation pseudo-class(:not);
+1 - element type seletor e pseudo elements (::before, ::after)
+10 - Também temos os classes e attribute selectors, com valor de 10, ou seja, são mais fortes que os anteriores.
+100 - O segundo mais forte, ID selector, com um valor de 100, vence todos os selectors anteriores.
+1000 - Por fim, temos o inline, com o valor 1000, quaisquer desses selectors anteriormente citado
+
+!important:
+Não é considerado uma boa prática, somente fazer uso, caso utilize um código de terceiros e não consiga fazer uma sobreposição de outra forma.
