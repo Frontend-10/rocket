@@ -19,3 +19,14 @@ Especifidade:
 
 !important:
 Não é considerado uma boa prática, somente fazer uso, caso utilize um código de terceiros e não consiga fazer uma sobreposição de outra forma.
+
+| block                                | inline                               |
+ --------------------------------------+--------------------------------------
+| Ocupa toda a linha, colocando o pró- | Elemento ao lado do outro.           |
+| ximo elemento abaixo desse.          |                                      |
+ --------------------------------------+--------------------------------------
+| Widht e height são respeitados.      | Widht e height não funcionam.        |
+ --------------------------------------+--------------------------------------
+| Padding, margin e border. Funcionam  | Somente valores horizontais de margin|
+| normalmente.                         | padding e border.                    |
+ -------------------------------------- --------------------------------------
