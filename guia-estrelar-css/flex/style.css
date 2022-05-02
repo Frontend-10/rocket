@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+}
+
+.box01 {
+    background-color: blue;
+}
+
+.box02 {
+    background-color: red;
+}
+
+.box03 {
+    background-color: green;
+}

@@ -1,0 +1,82 @@
+/* position -> libera o uso de 5 atributos:
+    - top;
+    - bottom;
+    - right;
+    - left;
+    - z-index(empilhamento);
+
+    position: relative;
+     -> O item continua ocupando o seu lugar no fluxo da página, porém pode
+     possuir um posicionamento relativo a sua posiçao original.
+
+    position: absolute;
+     -> O item faz parte de uma nova camada, e agora possui uma posição absoluta 
+     em relação a página, ou em relação ao seu elemento pai com posicionamento re-
+     lativo.
+
+    position: fixed;
+     -> O item também é retirado para uma nova camada, e agora ele está fixo na pá-
+     gina.
+*/
+main {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin-bottom: .5em;
+}
+
+.box01 {
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.box02 {
+    background-color: red;
+    position: relative;
+    z-index: -1;
+}
+
+.box03 {
+    background-color: green;
+}
+
+.box04 {
+    background-color: aqua;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+/* Empilhamento */
+.stacking {
+    position: relative;
+}
+
+.box05 {
+    background-color: coral;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.box06 {
+    background-color: darkmagenta;
+    position: absolute;
+    left: 80px;
+    top: 80px;
+    z-index: 1;
+}
+
+.box07 {
+    background-color: brown;
+    position: absolute;
+    left: 160px;
+    top: 160px;
+}

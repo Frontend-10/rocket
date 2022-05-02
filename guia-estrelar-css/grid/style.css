@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-columns: 1fr 350px;
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+main {
+    grid-area: main;
+    background-color: aquamarine;
+}
+
+aside {
+    grid-area: aside;
+    background-color: cornflowerblue;
+}
+
+footer {
+    grid-area: footer;
+    background-color: aqua;
+}
